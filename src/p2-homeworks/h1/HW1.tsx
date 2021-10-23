@@ -11,7 +11,7 @@ const messageData = {
 
 function HW1() {
     return (
-        <div className={classes.dicplay}>
+        <div className={classes.display}>
             <hr/>
 
             {/*should work (должно работать)*/}

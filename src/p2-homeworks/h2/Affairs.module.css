@@ -1,3 +1,32 @@
-.someClass {
+.tasksBlock {
+    display: grid;
+    grid-template-columns: 100px 100px 50px;
+    margin:10px;
+}
 
+.task {
+    margin: 10px;
+    width: 100px;
+}
+
+.low {
+    color: olivedrab;
+}
+
+.middle {
+    color: orange;
+}
+
+.high {
+    color: red;
+}
+
+.button{
+    margin: 5px;
+    width: 56px;
+    background: #b48bf2;
+}
+
+.active{
+    background: blueviolet;
 }
