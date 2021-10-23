@@ -13,6 +13,7 @@ function HW1() {
     return (
         <div className={classes.display}>
             <hr/>
+            homeworks 1
 
             {/*should work (должно работать)*/}
 

@@ -25,8 +25,14 @@
     margin: 5px;
     width: 56px;
     background: #b48bf2;
+    border: none;
 }
 
 .active{
     background: blueviolet;
+}
+
+.buttonX{
+    background: plum;
+    border: none;
 }
