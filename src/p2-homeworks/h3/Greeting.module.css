@@ -1,7 +1,63 @@
-.someClass {
-
+.greeting {
+    display: flex;
+    align-items: flex-start;
 }
 
-.error {
-    border: 1px solid red;
+
+.errorMessage {
+    height: 20px;
+    color: red;
+    margin-left: 10px;
+}
+
+.input {
+    margin: 10px;
+    background-color: lavender;
+}
+
+.input:focus {
+    outline: none;
+    border: blueviolet solid 2px;
+}
+
+.errorInput {
+    border: 2px solid red;
+    margin: 10px;
+    background-color: lavenderblush;
+    outline: none;
+}
+
+
+.button {
+    margin: 10px;
+    border-radius: 20px;
+    width: 50px;
+    height: 20px;
+    background: #a7ffa6;
+    transform: scale(1);
+    box-shadow: 0 0 5px 5px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.button:focus {
+    outline: #99ff99 solid 1px;
+}
+
+.button:active {
+    color: darkslategrey;
+}
+
+.button:disabled {
+    color: darkgray;
+    box-shadow: none;
+}
+
+.totalUsers {
+    margin: 10px;
 }
