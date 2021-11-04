@@ -1,5 +1,11 @@
 .checkbox {
+    appearance: none;
+    background-image: url("https://pic.onlinewebfonts.com/svg/img_328521.png");
+}
 
+.checkbox:checked {
+    appearance: none;
+    background-image: url("https://pic.onlinewebfonts.com/svg/img_328521.png");
 }
 
 .spanClassName {
