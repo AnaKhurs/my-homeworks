@@ -20,9 +20,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         const valueTrim = e.currentTarget.value.trim();
         if (valueTrim) {
             setName(valueTrim);
-            setError('');
+            error && setError('');
         } else {
-            setName('');
+            name && setName('');
             setError('name is require!');
         }
 
