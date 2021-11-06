@@ -2,6 +2,7 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import classes from './Affairs.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = {
     data: Array<AffairType>
@@ -44,10 +45,40 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button onClick={setAll} className={cnAll}>All</button>
+            <SuperButton
+                onClick={setAll}
+                className={cnAll}
+            >
+                all {/*// название кнопки попадёт в children*/}
+            </SuperButton>
+            <SuperButton
+                onClick={setHigh}
+                className={cnHigh}
+            >
+                high {/*// название кнопки попадёт в children*/}
+            </SuperButton>
+            <SuperButton
+                onClick={setMiddle}
+                className={cnMiddle}
+            >
+                middle {/*// название кнопки попадёт в children*/}
+            </SuperButton>
+            <SuperButton
+                onClick={setLow}
+                className={cnLow}
+            >
+                low {/*// название кнопки попадёт в children*/}
+            </SuperButton>
+
+
+
+
+
+
+{/*            <button onClick={setAll} className={cnAll}>All</button>
             <button onClick={setHigh} className={cnHigh}>High</button>
             <button onClick={setMiddle} className={cnMiddle}>Middle</button>
-            <button onClick={setLow} className={cnLow}>Low</button>
+            <button onClick={setLow} className={cnLow}>Low</button>*/}
         </div>
     )
 }

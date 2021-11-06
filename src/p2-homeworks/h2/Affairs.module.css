@@ -1,10 +1,17 @@
 .tasksBlock {
     display: grid;
-    grid-template-columns: 100px 100px 50px;
+    grid-template-columns: 120px 100px 55px;
     margin:10px;
+    justify-items: center;
 }
 
 .task {
+    margin: 10px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.priority{
     margin: 10px;
     width: 100px;
 }
@@ -22,14 +29,14 @@
 }
 
 .button{
-    margin: 5px;
-    width: 56px;
+/*    margin: 5px;*/
+/*    width: 56px;*/
     background: #b48bf2;
-    border: none;
+/*    border: none;*/
 }
 
 .active{
-    background: blueviolet;
+    background: black;
 }
 
 .buttonX{

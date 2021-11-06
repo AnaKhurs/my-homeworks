@@ -23,16 +23,16 @@
 .errorInput {
     border: 2px solid red;
     margin: 10px;
-    background-color: lavenderblush;
+    background-color: lightpink;
     outline: none;
 }
 
 
 .button {
-    margin: 10px;
+/*    margin: 10px;
     border-radius: 20px;
     width: 50px;
-    height: 20px;
+    height: 20px;*/
     background: #a7ffa6;
     transform: scale(1);
     box-shadow: 0 0 5px 5px rgba(34, 60, 80, 0.2);
@@ -43,6 +43,7 @@
     transform: scale(1.2);
     box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
     transition: box-shadow 0.5s, transform 0.5s;
+    background: #3ede6c;
 }
 
 .button:focus {
@@ -54,10 +55,14 @@
 }
 
 .button:disabled {
-    color: darkgray;
+/*    color: darkgray;*/
     box-shadow: none;
 }
 
 .totalUsers {
-    margin: 10px;
+    margin: 15px;
+}
+
+.spanClass{
+    display: block;
 }

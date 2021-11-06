@@ -1,6 +1,7 @@
 import React from 'react'
 import {AffairType} from "./HW2";
 import classes from './Affairs.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairPropsType = {
     // key не нужно типизировать
@@ -11,13 +12,21 @@ type AffairPropsType = {
 function Affair(props: AffairPropsType) {
     const deleteCallback = () => props.deleteAffairCallback(props.affair._id)
 
-    const priorityClass = classes.task + ' ' + classes[props.affair.priority]
+    const priorityClass = /*classes.task + ' ' +*/  classes.priority + " " + classes[props.affair.priority]
 
     return (
         <div className={classes.tasksBlock}>
             <div className={classes.task}>{props.affair.name}</div>
             <div className={priorityClass}>[{props.affair.priority}]</div>
-            <button onClick={deleteCallback} className={classes.buttonX}>X</button>
+
+            <SuperButton
+                red // пропсу с булевым значением не обязательно указывать true
+                onClick={deleteCallback}
+            >
+                X {/*// название кнопки попадёт в children*/}
+            </SuperButton>
+
+            {/*<button onClick={deleteCallback} className={classes.buttonX}>X</button>*/}
         </div>
     )
 }
