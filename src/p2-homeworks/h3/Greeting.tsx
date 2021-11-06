@@ -42,7 +42,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             <SuperButton
                 onClick={addUser}
                 disabled={!name}
-                className={s.button}
+                className={ name ? s.button : ""}
             >
                 add {/*// название кнопки попадёт в children*/}
             </SuperButton>
