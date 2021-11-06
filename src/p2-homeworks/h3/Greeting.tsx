@@ -21,11 +21,6 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div className={s.greeting}>
             <div>
-
-
-
-
-
                 <SuperInputText  value={name}
                                  onChange={setNameCallback}
                                  className={inputClass}
