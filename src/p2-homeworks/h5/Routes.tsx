@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink, Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import {PreJunior} from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
 import {Junior} from './pages/Junior';
@@ -20,7 +20,7 @@ export function RoutesOld() {
 
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
                 {/*exact нужен чтоб указать полное совподение (что после '/' ничего не будет)*/}
-                {/* <Route path={'/'} exact element={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>*/}
+                {/* <Route path={'/'} exact render={() => <Redirect to={PATH.PRE_JUNIOR}/>}/>*/}
 
                 <Route path={'/'} element={<PreJunior/>}/>
 
