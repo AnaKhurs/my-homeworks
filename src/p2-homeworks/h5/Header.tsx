@@ -6,7 +6,6 @@ import classes from "./Header.module.css"
 function Header() {
     return (
         <div className={classes.header}>
-            {/*// add NavLinks*/}
             <NavLink className={ ({isActive}) => isActive ? classes.active : classes.link} to={PATH.PRE_JUNIOR}>PRE-JUNIOR</NavLink>
             <NavLink className={ ({isActive}) => isActive ? classes.active : classes.link} to={PATH.JUNIOR}>JUNIOR</NavLink>
             <NavLink className={ ({isActive}) => isActive ? classes.active : classes.link} to={PATH.JUNIOR_PLUS}>JUNIOR+</NavLink>
