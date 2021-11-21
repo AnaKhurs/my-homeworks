@@ -9,14 +9,16 @@ function HW6() {
     const save = () => {
         saveState<string>('editable-span-value', value)
     }
+
     const restore = () => {
-        // setValue()
+        setValue(restoreState('editable-span-value', ''))
     }
 
     return (
         <div>
             <hr/>
             homeworks 6
+
 
             {/*should work (должно работать)*/}
             <div>
