@@ -1,0 +1,33 @@
+.select{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    /*appearance: none;*/
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #cbd6ee;
+   /* border: 2px inset rgb(118,118,118);*/
+    border-radius: 2px;
+}
+
+.select:focus{
+    color: black;
+    background: #cfcef9;
+}
+
+.option{
+    color: white;
+    background: royalblue;
+}
+
+.option:checked{
+    background: #1d49aa;
+    color: white;
+}
+
+.option:hover{
+    box-shadow: 0 0 10px 100px grey inset;
+    transition: all .2s ease-in-out;
+    background: #6c7589;
+}
