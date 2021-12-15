@@ -7,7 +7,6 @@ function HW9() {
             <hr/>
             homeworks 9
 
-            {/*should work (должно работать)*/}
             <Clock/>
 
             <hr/>
